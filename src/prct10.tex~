@@ -1,0 +1,73 @@
+
+\documentclass[spanish,a4paper,10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{latexsym,amsfonts,amssymb,amstext,amsthm,float,amsmath}
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[dvips]{epsfig}
+\usepackage{doc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%123456789012345678901234567890123456789012345678901234567890123456789
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\textheight 29cm
+%\textwidth 15cm
+%\topmargin -4cm
+%\oddsidemargin 5mm
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\title{Número $\pi$}
+\author{Laura Hernández Bethencourt \\ Práctica de Laboratorio \#10}
+\date{9 de abril de 2014}
+
+\maketitle
+
+\begin{abstract}
+El objetivo de esta práctica es entregar un artículo escrito en \LaTeX{}
+\end{abstract}
+
+%\thispagestyle{empty}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\section{Sección Alfa}
+Texto de relleno\footnote{relleno: prueba de pie de página.}.
+
+\subsection{Subsección Alfa}
+Texto de relleno nº2.
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\section{Sección Beta}
+Texto de relleno nº3. \\
+Texto\footnote{texto: prueba(2) de pie de página.} de relleno nº4.
+
+\subsection{Subsección Beta}
+\begin{Tabla}
+\begin{tabular}{lrc}
+\hline Columna 1  & Columna 2 & Columna 3  \\ \hline
+Elemento 1 & Elemento 2 & Elemento 3 \\ 
+Elemento 4 & Elemento 5 & Elemento 6 \\ 
+Elemento 7 & Elemento 8 & Elemento 9 \\ 
+\end{tabular}
+\end{Tabla}
+\\Prueba de referencia a tabla. \ref{Tabla}
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\section{Sección Gamma}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.15]{imagen1.eps} \end{center}
+\caption{Universidad de La Laguna}
+\label{Imagen}
+\end{figure}
+\\Prueba de referencia a imagen. \ref{Imagen}
+
+\begin{thebibliography}{1}
+\bibitem{latex} Teoría de \LaTeX{}. \\http://campusvirtual.ull.es/1314/pluginfile.php/197714/mod_resource/content/3/TeoriaLaTeX.1.pdf
+\bibitem{latex} Teoría de \LaTeX{}(2). \\http://campusvirtual.ull.es/1314/pluginfile.php/197721/mod_resource/content/3/TeoriaLaTeX.2.pdf
+\end{thebibliography}
+
+\end{document}
